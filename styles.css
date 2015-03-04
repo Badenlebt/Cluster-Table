@@ -1,0 +1,108 @@
+body {
+	background: #aaa;
+	width: 95%;
+}
+
+h1 {
+	margin: 5%;
+}
+
+div {
+	margin: 0;	
+}
+
+.clustertable {
+	width: 98%;
+	margin: 5%;
+}
+
+.tablepart {
+	width: 100%;
+}
+
+.tablepart:first-child .tablerow.tablehead  {
+	display: inline-block;
+}
+
+.tablepart  .tablerow.tablehead  {
+	display: none;
+}
+
+.tablerow {
+	clear: both;
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.tablepart:first-child .tablerow:first-child .rowelem {
+	border-top: 1px solid;
+}
+
+.rowelem.rowhead {
+	border-left: 1px solid;
+}
+
+.rowelem {
+	width: 15%;
+	min-width: 25px;
+	max-width: 150px;
+	height: 20px;
+	display: block;
+	padding: 2px;
+	float: left;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 500px) {
+	.tablepart  .tablerow.tablehead  {
+		display: inline-block;
+	}
+	
+	.tablepart {
+		clear: both;
+		margin-bottom: 25px;
+	}
+	
+	.tablerow {
+		float: left;
+		display: block;
+		clear: none;
+		width: 45%;
+		min-width: 25px;
+		max-width: 150px;
+		margin-top: 25px;
+		border: none;
+	}
+		
+	.rowelem {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	
+	
+	.tablepart:first-child .tablerow:first-child .rowelem {
+		border-top: none; 
+	}
+	
+	.tablerow:first-child .rowelem {
+		border-left: 1px solid;
+	}
+	
+	.rowelem.rowhead {
+		border-top: 1px solid;
+	}
+	
+	.tablepart:first-child .tablerow:first-child .rowelem.rowhead {
+		border-top: 1px solid;
+	}
+
+	.rowelem.rowhead {
+		border-left: none;
+	}
+}
